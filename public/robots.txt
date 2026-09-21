@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dacosta-jerseys.netlify.app/sitemap.xml
