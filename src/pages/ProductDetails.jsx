@@ -1,12 +1,29 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import products from "../data/products";
+import { useEffect } from "react";
 
 function ProductDetails() {
   const { id } = useParams();
 
   // Find the product using the ID from the URL
   const product = products.find((item) => item.id === Number(id));
+  useEffect(() => {
+    if (product) {
+      document.title = `${product.name} ${product.version} | Dacosta Jerseys`;
+
+      const description = document.querySelector('meta[name="description"]');
+
+      if (description) {
+        description.setAttribute(
+          "content",
+          `Shop the ${product.name} ${product.version} from Dacosta Jerseys. Available in ${product.sizes.join(
+            ", ",
+          )}. Price: GH₵${product.price}. Order easily through WhatsApp.`,
+        );
+      }
+    }
+  }, [product]);
 
   // Store the size selected by the customer
   const [selectedSize, setSelectedSize] = useState("");
