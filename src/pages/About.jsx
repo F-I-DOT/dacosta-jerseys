@@ -152,8 +152,8 @@ function About() {
               </p>
 
               <p>
-                <strong className="text-white">Payment:</strong> Telecel Cash —
-                0501989232
+                <strong className="text-white">Payment:</strong> Telecel
+                Cash-0501989232
               </p>
 
               <p>
