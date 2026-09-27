@@ -22,7 +22,7 @@ const products = [
     team: "Real Madrid",
     name: "Real Madrid Second",
     version: "Player Version",
-    price: 150,
+    price: 180,
     sizes: ["L"],
     image: "/images/real-madrid-second-fan.jpeg",
   },
