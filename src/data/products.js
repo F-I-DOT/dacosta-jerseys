@@ -5,7 +5,7 @@ const products = [
     name: "Real Madrid Home",
     version: "Player Version",
     price: 180,
-    sizes: ["L", "XL"],
+    sizes: ["L"],
     image: "/images/real-madrid-home-player.jpeg",
   },
   {
@@ -21,9 +21,9 @@ const products = [
     id: 3,
     team: "Real Madrid",
     name: "Real Madrid Second",
-    version: "Fan Version",
+    version: "Player Version",
     price: 150,
-    sizes: ["L", "XL"],
+    sizes: ["L"],
     image: "/images/real-madrid-second-fan.jpeg",
   },
   {
